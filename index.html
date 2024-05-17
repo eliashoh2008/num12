@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>calkulatore</title>
+		<script>
+			function addTwoNumbers() 
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1+num2;
+			}
+			function average() 
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=(num1+num2)/2;
+			}
+		</script>
+	</head>
+	<body>
+			<h1>fan wis calkulate</h1><br>
+			
+		<form>
+			<label for="fnumber">First nuba:</label>
+			<input type="text" id="fnumber" name="fnumber"><br><br>
+			<label for="snumber">Second numba:</label>
+			<input type="text" id="snumber" name="snumber"><br><br>
+		</form>
+			
+		<button onclick="addTwoNumbers()">
+			change the world
+			</button>
+		
+		<button onclick="average()">
+			Average
+			</button>
+			
+			<p id="result">
+			</p>
+	</body>
+</html> 
